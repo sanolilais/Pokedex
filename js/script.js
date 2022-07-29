@@ -1,3 +1,13 @@
+const btnChangeTheme = document.getElementById('btncheck')
+
+btnChangeTheme.addEventListener('change' , () => {
+  document.body.classList.toggle('dark')
+
+  console.log(btnChangeTheme)
+})
+
+const main = document.querySelector('.main')
+
 const pokemonName = document.querySelector(".pokemon-name")
 const pokemonNumber = document.querySelector(".pokemon-number")
 const pokemonImage = document.querySelector(".pokemon-image")
@@ -7,6 +17,8 @@ const buttonNext = document.querySelector(".btn-next")
 const buttonPrev = document.querySelector(".btn-prev")
 
 let searchPokemon = 1
+
+let mainType = ''
 
 const fetchPokemon = async (pokemon) => {
 
@@ -25,10 +37,16 @@ const renderPokemon = async (pokemon) => {
   const data = await fetchPokemon(pokemon);
   
 if (data) {
+  mainType = data.types[0].type.name
   pokemonImage.style.display = 'block' 
-  pokemonName.innerHTML = data.name
+  pokemonName.innerHTML = data.name 
   pokemonNumber.innerHTML = data.id
   pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'] 
+  
+  const color = `var(--${mainType})`
+  document.body.style.backgroundColor = color
+
+
   input.value = '';
   searchPokemon = data.id
 

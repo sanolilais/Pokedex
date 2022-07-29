@@ -4,15 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/typespokemon.css">
   <title>Pokedex</title>
 </head>
 <body>
-  <main>
-      <img src="" height="70" alt="Image Pokemon" class="pokemon-image">
+  <main class="main">
+    <div class="change-theme">
+      <input type="checkbox" class="checkbox" id ="btncheck">
+      <label class="label" for="checkbox">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+        <div class="mark"></div>
+      </label>     
+      </div>
+
+      <img src="" height="100" alt="Image Pokemon" class="pokemon-image">
     <h1 class="pokemon-data">
      <span class="pokemon-number">6</span> -
-     <span class="pokemon-name">Charizard</span>
+     <span class="pokemon-name">Charizard</span>-
+     <span class="pokemon-type"></span>
     </h1>
 
 
@@ -21,10 +37,14 @@
 
     </form>
     <div class="buttons">
-      <button class="button btn-prev">Prev</button>
-      <button class="button btn-next">Next</button>
+      <button class="button btn-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      <button class="button btn-next">
+        <i class="fa-solid fa-chevron-right"></i>
+        </button>
     </div>
-    <img src="./assets/images/pokedex.png" alt="Pokemon">
+    <img src="./assets/images/pokedex.png" class="image-pokemon" alt="Pokemon">
 
   </main>
   
