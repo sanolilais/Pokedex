@@ -8,4 +8,5 @@ Nele tive meu primeiro contato com APIs, aprendi como consumir uma API, vi novas
 Esse desafio é parte dos estudos de Javascript, e da descoberta do que posso fazer com a programacão. :) </h4>
 
 
-![print pokedex](https://user-images.githubusercontent.com/87990551/181398177-0ca48bd5-37df-4324-9239-28a43392ca8c.png)![print 3 pokedex](https://user-images.githubusercontent.com/87990551/181399081-d59a1c17-68d4-45f4-9291-f41d14951d1e.png)
+![print pokedex](https://user-images.githubusercontent.com/87990551/182225832-c8fdc37c-c128-4290-92b0-1eea318966bc.png)![print 2 pokedex](https://user-images.githubusercontent.com/87990551/182225921-6d8896a3-6e56-4305-94dc-24155e245b52.png)
+
