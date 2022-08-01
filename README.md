@@ -1,5 +1,5 @@
 # Pokedex
-<h1><i>Pokedex</h1></i>
+
 
 <h4> Fiz esse projeto para treinar meus conhecimentos em HTML, CSS e JavaScript.
 
