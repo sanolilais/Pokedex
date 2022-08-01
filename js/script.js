@@ -1,13 +1,3 @@
-const btnChangeTheme = document.getElementById('btncheck')
-
-btnChangeTheme.addEventListener('change' , () => {
-  document.body.classList.toggle('dark')
-
-  console.log(btnChangeTheme)
-})
-
-const main = document.querySelector('.main')
-
 const pokemonName = document.querySelector(".pokemon-name")
 const pokemonNumber = document.querySelector(".pokemon-number")
 const pokemonImage = document.querySelector(".pokemon-image")
@@ -43,8 +33,8 @@ if (data) {
   pokemonNumber.innerHTML = data.id
   pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'] 
   
-  const color = `var(--${mainType})`
-  document.body.style.backgroundColor = color
+  const imageUrl = `url("assets/images/${mainType}_type.png")`
+  document.body.style.backgroundImage = imageUrl
 
 
   input.value = '';
